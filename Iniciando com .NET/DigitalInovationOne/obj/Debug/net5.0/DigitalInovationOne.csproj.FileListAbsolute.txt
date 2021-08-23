@@ -1,0 +1,32 @@
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.exe
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.deps.json
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.runtimeconfig.json
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.runtimeconfig.dev.json
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.dll
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\ref\DigitalInovationOne.dll
+C:\Users\alesa\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.pdb
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.csproj.AssemblyReference.cache
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.AssemblyInfoInputs.cache
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.AssemblyInfo.cs
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.csproj.CoreCompileInputs.cache
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.dll
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\ref\DigitalInovationOne.dll
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.pdb
+C:\Users\alesa\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.genruntimeconfig.cache
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.exe
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.deps.json
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.runtimeconfig.json
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.runtimeconfig.dev.json
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.dll
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\ref\DigitalInovationOne.dll
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\bin\Debug\net5.0\DigitalInovationOne.pdb
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.csproj.AssemblyReference.cache
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.AssemblyInfoInputs.cache
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.AssemblyInfo.cs
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.csproj.CoreCompileInputs.cache
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.dll
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\ref\DigitalInovationOne.dll
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.pdb
+D:\Cursos\Decola Tech\Iniciando com .NET\DigitalInovationOne\obj\Debug\net5.0\DigitalInovationOne.genruntimeconfig.cache
