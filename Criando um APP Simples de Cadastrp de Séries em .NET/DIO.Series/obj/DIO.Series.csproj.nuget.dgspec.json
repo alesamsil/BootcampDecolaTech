@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\DIO.Series\\DIO.Series.csproj": {}
+    "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\Dio.Series\\DIO.Series.csproj": {}
   },
   "projects": {
-    "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\DIO.Series\\DIO.Series.csproj": {
+    "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\Dio.Series\\DIO.Series.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\DIO.Series\\DIO.Series.csproj",
+        "projectUniqueName": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\Dio.Series\\DIO.Series.csproj",
         "projectName": "DIO.Series",
-        "projectPath": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\DIO.Series\\DIO.Series.csproj",
+        "projectPath": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\Dio.Series\\DIO.Series.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\DIO.Series\\obj\\",
+        "outputPath": "D:\\Cursos\\Decola Tech\\Criando um APP Simples de Cadastrp de Séries em .NET\\Dio.Series\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alesa\\AppData\\Roaming\\NuGet\\NuGet.Config"

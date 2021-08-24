@@ -2,7 +2,7 @@ using System;
 
 namespace DIO.Series
 {
-    public class Serie : EntidadeBase
+    public class Filme : EntidadeBase
     {
         // Atributos
 		private Genero Genero { get; set; }
@@ -12,7 +12,7 @@ namespace DIO.Series
         private bool Excluido {get; set;}
 
         // Métodos
-		public Serie(int id, Genero genero, string titulo, string descricao, int ano)
+		public Filme(int id, Genero genero, string titulo, string descricao, int ano)
 		{
 			this.Id = id;
 			this.Genero = genero;
@@ -28,7 +28,7 @@ namespace DIO.Series
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
+            retorno += "Ano de Lançamento: " + this.Ano + Environment.NewLine;
             retorno += "Excluido: " + this.Excluido;
 			return retorno;
 		}

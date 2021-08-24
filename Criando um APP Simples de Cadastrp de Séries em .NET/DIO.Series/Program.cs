@@ -133,7 +133,6 @@ namespace DIO.Series
 			Console.WriteLine();
 			Console.WriteLine("DIO Séries a seu dispor!!!");
 			Console.WriteLine("Informe a opção desejada:");
-
 			Console.WriteLine("1- Listar séries");
 			Console.WriteLine("2- Inserir nova série");
 			Console.WriteLine("3- Atualizar série");
