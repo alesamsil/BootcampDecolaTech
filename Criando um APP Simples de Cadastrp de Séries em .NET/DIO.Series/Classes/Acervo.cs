@@ -4,23 +4,22 @@ namespace DIO.Series
 {
     public class Acervo
     {
-         public int Id { get; set; }
+         public int Id { get; set;}
          public int Tipo {get; set;}
-         public string Titulo { get; set; }
-         public string Descricao { get; set; }
-         public int Ano { get; set; }
+         public string Titulo { get; set;}
+         public string Descricao { get; set;}
+         public int Ano { get; set;}
          public bool Excluido {get; set;}
 
-
-        public Acervo(int id, int tipo, string titulo, string descricao, int ano)
-		{
-			this.Id = id;
+         public Acervo(int id, int tipo, string titulo, string descricao, int ano)
+         {
+            this.Id = id;
             this.Tipo = tipo;
 			this.Titulo = titulo;
 			this.Descricao = descricao;
 			this.Ano = ano;
             this.Excluido = false;
-		}
+         }
 
         public override string ToString()
 		{
@@ -49,8 +48,8 @@ namespace DIO.Series
 		{
 			return this.Tipo;
 		}
-        public void Excluir() {
-
+        public void Excluir() 
+        {    
             this.Excluido = true;
         }
     }

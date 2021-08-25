@@ -4,27 +4,18 @@ namespace DIO.Series
 {
     public class Serie : Temp
     {
-		private generoG Genero { get; set; }
-        private bool spinOFF {get; set;}
+		public generoG generoG { get; set;}
+        public bool spinOff {get; set;}
+        
+        public Serie(int id, int tipo, string titulo, string descricao, int ano, String temporada, int ndeepisodeos, bool finalizado, bool cancelado, generoG genero, bool spinoff) : base (id, tipo,titulo,descricao,ano,temporada,ndeepisodeos,finalizado,cancelado)
+        {
+            this.generoG = genero;
+            this.spinOff = spinoff;
+        }
 
-		public Serie(generoG genero, bool spinoff)
+        public bool retornaSpinOff()
 		{
-			this.Genero = genero;
-            this.spinOFF = spinoff;
+			return this.spinOff;
 		}
-
-		public bool retornaGenero()
-		{
-			return this.spinOFF;
-		}
-		
-		public override string toString()
-		{
-            string retorno = "";
-            retorno += "Genero: " + this.Genero + Environment.NewLine;
-            retorno += "Spin off: " + this.spinOFF;
-			return retorno;
-		}
-
     }
 }
