@@ -1,6 +1,6 @@
 namespace DIO.Series
 {
-	public enum Genero
+	public enum generoG
 	{
 		Acao = 1,
 		Aventura = 2,

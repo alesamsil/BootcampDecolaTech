@@ -2,18 +2,20 @@ using System;
 
 namespace DIO.Series
 {
-    public class Filme : EntidadeBase
+    public class Acervo
     {
-		private generoG Genero { get; set; }
-		private string Titulo { get; set; }
-		private string Descricao { get; set; }
-		private int Ano { get; set; }
-        private bool Excluido {get; set;}
+         public int Id { get; set; }
+         public int Tipo {get; set;}
+         public string Titulo { get; set; }
+         public string Descricao { get; set; }
+         public int Ano { get; set; }
+         public bool Excluido {get; set;}
 
-		public Filme(int id, generoG genero, string titulo, string descricao, int ano)
+
+        public Acervo(int id, int tipo, string titulo, string descricao, int ano)
 		{
 			this.Id = id;
-			this.Genero = genero;
+            this.Tipo = tipo;
 			this.Titulo = titulo;
 			this.Descricao = descricao;
 			this.Ano = ano;
@@ -23,7 +25,6 @@ namespace DIO.Series
         public override string ToString()
 		{
             string retorno = "";
-            retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de Lançamento: " + this.Ano + Environment.NewLine;
@@ -44,7 +45,12 @@ namespace DIO.Series
 		{
 			return this.Excluido;
 		}
+        public int retornaTipo()
+		{
+			return this.Tipo;
+		}
         public void Excluir() {
+
             this.Excluido = true;
         }
     }
