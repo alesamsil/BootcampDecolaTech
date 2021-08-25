@@ -10,5 +10,13 @@ namespace DIO.Series
         { 
             this.generoG = generoG;
         }
+
+		public override string ToString()
+		{
+            string retorno = "";
+            retorno += this.ToString();
+            retorno += "Genero: " + this.generoG + Environment.NewLine;
+			return retorno;
+		}
     }
 }

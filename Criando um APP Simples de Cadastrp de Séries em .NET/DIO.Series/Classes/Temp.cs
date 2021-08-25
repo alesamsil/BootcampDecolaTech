@@ -16,7 +16,16 @@ namespace DIO.Series
             this.Finalizado = finalizado;
             this.Cancelado = cancelado;
         }
-
+        public override string ToString()
+		{
+            string retorno = "";
+            retorno += this.ToString();
+            retorno += "Temporada: " + this.Temporada + Environment.NewLine;
+            retorno += "Número de Epi: " + this.nDeEpisodeos + Environment.NewLine;
+            retorno += "Finalizado: " + this.Finalizado + Environment.NewLine;
+            retorno += "Cancelado: " + this.Cancelado;
+			return retorno;
+		}
         public string retornaTemporada()
 		{
 			return this.Temporada;
