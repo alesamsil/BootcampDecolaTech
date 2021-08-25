@@ -4,8 +4,9 @@ namespace DIO.Series
 {
     class Program
     {
-        static SerieRepositorio repositorio = new SerieRepositorio();
+        static SerieRepositorio repositorioS = new SerieRepositorio();
 		static FilmeRepositorio repositorioF = new FilmeRepositorio();
+		static AnimeRepositorio repositorioA = new AnimeRepositorio();
         static void Main(string[] args)
         {
             string opcaoUsuario = ObterOpcaoUsuario();
