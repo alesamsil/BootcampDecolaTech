@@ -7,7 +7,7 @@ namespace DIO.Series
 		public generoA generoA { get; set;}
         public bool filer {get; set;}
         
-        public Anime(int id, string titulo, string descricao, int ano, int temporada, int ndeepisodeos, bool finalizado, bool cancelado, generoA genero, bool spinoff) : base (id,titulo,descricao,ano,temporada,ndeepisodeos,finalizado,cancelado)
+        public Anime(int id, string titulo, string descricao, int ano, int temporada, int ndeepisodeos, bool finalizado, bool cancelado, generoA genero, bool filer) : base (id,titulo,descricao,ano,temporada,ndeepisodeos,finalizado,cancelado)
         {
             this.generoA = generoA;
             this.filer = filer;

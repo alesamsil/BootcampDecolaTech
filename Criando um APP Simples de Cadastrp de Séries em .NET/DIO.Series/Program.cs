@@ -19,7 +19,7 @@ namespace DIO.Series
 						ListarSeries();
 						break;
 					case "2":
-						InserirSerie();
+						InserirNoCatalogo();
 						break;
 					case "3":
 						AtualizarCatalogo();
@@ -113,13 +113,99 @@ namespace DIO.Series
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
 			{
+				Console.Write("Digite o id do Anime: ");
+				int indiceAnime = int.Parse(Console.ReadLine());
+
+				foreach (int i in Enum.GetValues(typeof(generoA)))
+				{
+					Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(generoA), i));
+				}
+				Console.Write("Digite o gênero entre as opções acima: ");
+				int entradaGenero = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite o Título do Anime: ");
+				string entradaTitulo = Console.ReadLine();
+
+				Console.Write("Digite o Ano de Início do Anime: ");
+				int entradaAno = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite a Descrição do Anime: ");
+				string entradaDescricao = Console.ReadLine();
+
+				Console.Write("Digite o número de temporadas: ");
+				int entradaTemporada = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite o número de episódios: ");
+				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
+
+				Console.Write("A série foi finalizada? ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaFinalizada = int.Parse(Console.ReadLine());
+				bool entradaBF;
+				if(entradaFinalizada == 1){
+					entradaBF = true;
+				}
+				else{
+					entradaBF = false;
+				}
 				
+				Console.Write("A série foi Cancelada? ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaCancelada = int.Parse(Console.ReadLine());
+				bool entradaBC;
+				if(entradaFinalizada == 1){
+					entradaBC = true;
+				}
+				else{
+					entradaBC = false;
+				}
+
+				Console.Write("A série possui Filer ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaSpinOff = int.Parse(Console.ReadLine());
+				bool entradaBS;
+				if(entradaSpinOff == 1){
+					entradaBS = true;
+				}
+				else{
+					entradaBS = false;
+				}
+
+				Anime atualizaAnime = new Anime(id: indiceAnime, titulo: entradaTitulo, descricao: entradaDescricao, ano: entradaAno, temporada:entradaTemporada, ndeepisodeos: entradaNumeroEpisodios, finalizado: entradaBF, cancelado: entradaBC, genero: (generoA)entradaGenero, filer: entradaBS);                                                                                              
+
+				repositorioA.Atualiza(indiceAnime, atualizaAnime);
+
 			}
 			else if(selecao == 2)
 			{
-				
+				Console.Write("Digite o id do Filme: ");
+				int indiceFilme = int.Parse(Console.ReadLine());
+
+				foreach (int i in Enum.GetValues(typeof(generoG)))
+				{
+					Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(generoG), i));
+				}
+				Console.Write("Digite o gênero entre as opções acima: ");
+				int entradaGenero = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite o Título do filme: ");
+				string entradaTitulo = Console.ReadLine();
+
+				Console.Write("Digite o Ano de Início do filme: ");
+				int entradaAno = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite a Descrição da Série: ");
+				string entradaDescricao = Console.ReadLine();
+
+				Filme atualizaFilme = new Filme(id: indiceFilme, titulo: entradaTitulo, descricao: entradaDescricao, ano: entradaAno, genero: (generoG)entradaGenero);
+
+				repositorioF.Atualiza(indiceFilme, atualizaFilme);
 			}
-			else 
+
+			else if(selecao == 3)
 			{
 				Console.Write("Digite o id da série: ");
 				int indiceSerie = int.Parse(Console.ReadLine());
@@ -186,8 +272,11 @@ namespace DIO.Series
 
 				repositorioS.Atualiza(indiceSerie, atualizaSerie);
 			}
-			
-						
+			else
+			{
+				Console.WriteLine("Opção inválida.");
+				return;
+			}			
 			
 		}
         private static void ListarSeries()
@@ -210,7 +299,7 @@ namespace DIO.Series
 			}
 		}
 
-        private static void InserirSerie()
+        private static void InserirNoCatalogo()
 		{
 			Console.WriteLine("Inserir nova série");
 			foreach (int i in Enum.GetValues(typeof(generoG)))
