@@ -48,9 +48,9 @@ namespace DIO.Series
         private static void ExcluirDoCatalogo()
 		{
 			Console.Write("O que você deseja excluir?");
-			Console.Write("1 - Anime");
-			Console.Write("2 - Filme");
-			Console.Write("3 - Serie");
+			Console.Write("1 - Anime ");
+			Console.Write("2 - Filme ");
+			Console.Write("3 - Serie ");
 			
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
@@ -81,9 +81,9 @@ namespace DIO.Series
         private static void VisualizarCatalogo()
 		{
 			Console.Write("Qual Catálogo você deseja visualizar?");
-			Console.Write("1 - Anime");
-			Console.Write("2 - Filme");
-			Console.Write("3 - Serie");
+			Console.Write("1 - Anime ");
+			Console.Write("2 - Filme ");
+			Console.Write("3 - Serie ");
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
 			{
@@ -116,10 +116,10 @@ namespace DIO.Series
         private static void AtualizarCatalogo()
 		{
 			
-			Console.Write("Qual Catálogo você deseja atualizar?");
-			Console.Write("1 - Anime");
-			Console.Write("2 - Filme");
-			Console.Write("3 - Serie");
+			Console.Write("Qual Catálogo você deseja atualizar? \n");
+			Console.Write("1 - Anime \n");
+			Console.Write("2 - Filme \n");
+			Console.Write("3 - Serie \n");
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
 			{
@@ -148,9 +148,9 @@ namespace DIO.Series
 				Console.Write("Digite o número de episódios: ");
 				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
 
-				Console.Write("A série foi finalizada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi finalizada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaFinalizada = int.Parse(Console.ReadLine());
 				bool entradaBF;
 				if(entradaFinalizada == 1){
@@ -160,9 +160,9 @@ namespace DIO.Series
 					entradaBF = false;
 				}
 				
-				Console.Write("A série foi Cancelada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi Cancelada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaCancelada = int.Parse(Console.ReadLine());
 				bool entradaBC;
 				if(entradaFinalizada == 1){
@@ -172,9 +172,9 @@ namespace DIO.Series
 					entradaBC = false;
 				}
 
-				Console.Write("A série possui Filer ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série possui Filer \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaSpinOff = int.Parse(Console.ReadLine());
 				bool entradaBS;
 				if(entradaSpinOff == 1){
@@ -242,9 +242,9 @@ namespace DIO.Series
 				Console.Write("Digite o número de episódios: ");
 				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
 
-				Console.Write("A série foi finalizada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi finalizada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaFinalizada = int.Parse(Console.ReadLine());
 				bool entradaBF;
 				if(entradaFinalizada == 1){
@@ -254,9 +254,9 @@ namespace DIO.Series
 					entradaBF = false;
 				}
 				
-				Console.Write("A série foi Cancelada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi Cancelada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaCancelada = int.Parse(Console.ReadLine());
 				bool entradaBC;
 				if(entradaFinalizada == 1){
@@ -266,9 +266,9 @@ namespace DIO.Series
 					entradaBC = false;
 				}
 
-				Console.Write("A série é Spin Off ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série é Spin Off \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaSpinOff = int.Parse(Console.ReadLine());
 				bool entradaBS;
 				if(entradaSpinOff == 1){
@@ -293,9 +293,9 @@ namespace DIO.Series
         private static void InserirNoCatalogo()
 		{
 			Console.Write("Qual Catálogo você deseja visualizar?");
-			Console.Write("1 - Anime");
-			Console.Write("2 - Filme");
-			Console.Write("3 - Serie");
+			Console.Write("1 - Anime \n");
+			Console.Write("2 - Filme \n");
+			Console.Write("3 - Serie \n");
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
 			{
@@ -324,9 +324,9 @@ namespace DIO.Series
 				Console.Write("Digite o número de episódios: ");
 				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
 
-				Console.Write("A série foi finalizada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi finalizada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaFinalizada = int.Parse(Console.ReadLine());
 				bool entradaBF;
 				if(entradaFinalizada == 1){
@@ -336,9 +336,9 @@ namespace DIO.Series
 					entradaBF = false;
 				}
 				
-				Console.Write("A série foi Cancelada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi Cancelada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaCancelada = int.Parse(Console.ReadLine());
 				bool entradaBC;
 				if(entradaFinalizada == 1){
@@ -348,9 +348,9 @@ namespace DIO.Series
 					entradaBC = false;
 				}
 
-				Console.Write("A série possui Filer ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série possui Filer \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaSpinOff = int.Parse(Console.ReadLine());
 				bool entradaBS;
 				if(entradaSpinOff == 1){
@@ -416,9 +416,9 @@ namespace DIO.Series
 				Console.Write("Digite o número de episódios: ");
 				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
 
-				Console.Write("A série foi finalizada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi finalizada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaFinalizada = int.Parse(Console.ReadLine());
 				bool entradaBF;
 				if(entradaFinalizada == 1){
@@ -428,9 +428,9 @@ namespace DIO.Series
 					entradaBF = false;
 				}
 				
-				Console.Write("A série foi Cancelada? ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série foi Cancelada? \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaCancelada = int.Parse(Console.ReadLine());
 				bool entradaBC;
 				if(entradaFinalizada == 1){
@@ -440,9 +440,9 @@ namespace DIO.Series
 					entradaBC = false;
 				}
 
-				Console.Write("A série é Spin Off ");
-				Console.Write("1 - Para Sim ");
-				Console.Write("2 - Para Não ");
+				Console.Write("A série é Spin Off \n");
+				Console.Write("1 - Para Sim \n");
+				Console.Write("2 - Para Não \n");
 				int entradaSpinOff = int.Parse(Console.ReadLine());
 				bool entradaBS;
 				if(entradaSpinOff == 1){
@@ -462,26 +462,23 @@ namespace DIO.Series
 				return;
 			}
 		}
-
-
-
         private static void ListarCatalogo()
 		{
-			Console.Write("Qual catálogo você deseja listar?");
-			Console.Write("1 - Anime");
-			Console.Write("2 - Filme");
-			Console.Write("3 - Serie");
+			Console.Write("Qual catálogo você deseja listar? \n");
+			Console.Write("1 - Anime \n");
+			Console.Write("2 - Filme \n");
+			Console.Write("3 - Serie \n");
 			
 			int selecao = int.Parse(Console.ReadLine());
 			if (selecao == 1)
 			{
-				Console.WriteLine("Listar Animes");
+				Console.WriteLine("Listar Animes ");
 
 				var lista = repositorioA.Lista();
 
 				if (lista.Count == 0)
 				{
-					Console.WriteLine("Nenhum Filme encontrado.");
+					Console.WriteLine("Nenhum Filme encontrado. ");
 					return;
 				}
 
@@ -494,13 +491,13 @@ namespace DIO.Series
 			}
 			else if(selecao == 2)
 			{
-				Console.WriteLine("Listar Filmes");
+				Console.WriteLine("Listar Filmes ");
 
 				var lista = repositorioF.Lista();
 
 				if (lista.Count == 0)
 				{
-					Console.WriteLine("Nenhum Filme encontrado.");
+					Console.WriteLine("Nenhum Filme encontrado. ");
 					return;
 				}
 
@@ -513,13 +510,13 @@ namespace DIO.Series
 			}
 			else if (selecao == 3)
 			{
-				Console.WriteLine("Listar Séries");
+				Console.WriteLine("Listar Séries ");
 
 				var lista = repositorioS.Lista();
 
 				if (lista.Count == 0)
 				{
-					Console.WriteLine("Nenhuma série cadastrada.");
+					Console.WriteLine("Nenhuma série cadastrada. ");
 					return;
 				}
 
@@ -532,7 +529,7 @@ namespace DIO.Series
 			}
 			else
 			{
-				Console.WriteLine("Opção inválida.");
+				Console.WriteLine("Opção inválida. ");
 				return;
 			}		
 			
@@ -551,7 +548,6 @@ namespace DIO.Series
 			Console.WriteLine("C- Limpar Tela");
 			Console.WriteLine("X- Sair");
 			Console.WriteLine();
-
 			string opcaoUsuario = Console.ReadLine().ToUpper();
 			Console.WriteLine();
 			return opcaoUsuario;
