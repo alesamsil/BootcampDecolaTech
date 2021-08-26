@@ -4,15 +4,15 @@ namespace DIO.Series
 {
     public class Temp : Acervo
     {
-		public String Temporada { get; set;}
-        public int nDeEpisodeos {get; set;}
+		public int Temporada { get; set;}
+        public int nDeEpisodios {get; set;}
         public bool Finalizado {get; set;}
         public bool Cancelado {get; set;}
 
-        public Temp(int id, int tipo, string titulo, string descricao, int ano, String temporada, int ndeepisodeos, bool finalizado, bool cancelado) : base (id, tipo,titulo,descricao,ano)
+        public Temp(int id, string titulo, string descricao, int ano, int temporada, int ndeepisodios, bool finalizado, bool cancelado) : base (id,titulo,descricao,ano)
         {
             this.Temporada = temporada;
-            this.nDeEpisodeos = ndeepisodeos;
+            this.nDeEpisodios = ndeepisodios;
             this.Finalizado = finalizado;
             this.Cancelado = cancelado;
         }
@@ -21,18 +21,18 @@ namespace DIO.Series
             string retorno = "";
             retorno += this.ToString();
             retorno += "Temporada: " + this.Temporada + Environment.NewLine;
-            retorno += "Número de Epi: " + this.nDeEpisodeos + Environment.NewLine;
+            retorno += "Número de Epi: " + this.nDeEpisodios + Environment.NewLine;
             retorno += "Finalizado: " + this.Finalizado + Environment.NewLine;
             retorno += "Cancelado: " + this.Cancelado;
 			return retorno;
 		}
-        public string retornaTemporada()
+        public int retornaTemporada()
 		{
 			return this.Temporada;
 		}
          public int retornaNdeEpisodeos()
 		{
-			return this.nDeEpisodeos;
+			return this.nDeEpisodios;
 		}
         public bool retornaFinalizado()
 		{

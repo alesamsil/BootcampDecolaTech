@@ -5,16 +5,14 @@ namespace DIO.Series
     public class Acervo
     {
          public int Id { get; set;}
-         public int Tipo {get; set;}
          public string Titulo { get; set;}
          public string Descricao { get; set;}
          public int Ano { get; set;}
          public bool Excluido {get; set;}
 
-         public Acervo(int id, int tipo, string titulo, string descricao, int ano)
+         public Acervo(int id, string titulo, string descricao, int ano)
          {
             this.Id = id;
-            this.Tipo = tipo;
 			this.Titulo = titulo;
 			this.Descricao = descricao;
 			this.Ano = ano;
@@ -44,10 +42,7 @@ namespace DIO.Series
 		{
 			return this.Excluido;
 		}
-        public int retornaTipo()
-		{
-			return this.Tipo;
-		}
+        
         public void Excluir() 
         {    
             this.Excluido = true;

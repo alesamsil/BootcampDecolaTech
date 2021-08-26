@@ -7,7 +7,7 @@ namespace DIO.Series
 		public generoG generoG { get; set;}
         public bool spinOff {get; set;}
         
-        public Serie(int id, int tipo, string titulo, string descricao, int ano, String temporada, int ndeepisodeos, bool finalizado, bool cancelado, generoG genero, bool spinoff) : base (id, tipo,titulo,descricao,ano,temporada,ndeepisodeos,finalizado,cancelado)
+        public Serie(int id, string titulo, string descricao, int ano, int temporada, int ndeepisodeos, bool finalizado, bool cancelado, generoG genero, bool spinoff) : base (id, titulo,descricao,ano,temporada,ndeepisodeos,finalizado,cancelado)
         {
             this.generoG = genero;
             this.spinOff = spinoff;

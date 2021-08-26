@@ -22,13 +22,13 @@ namespace DIO.Series
 						InserirSerie();
 						break;
 					case "3":
-						AtualizarSerie();
+						AtualizarCatalogo();
 						break;
 					case "4":
-						ExcluirSerie();
+						ExcluirDoCatalogo();
 						break;
 					case "5":
-						VisualizarSerie();
+						VisualizarCatalogo();
 						break;
 					case "C":
 						Console.Clear();
@@ -45,47 +45,150 @@ namespace DIO.Series
 			Console.ReadLine();
         }
 
-        private static void ExcluirSerie()
+        private static void ExcluirDoCatalogo()
 		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
-
-			repositorio.Exclui(indiceSerie);
-		}
-
-        private static void VisualizarSerie()
-		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
-
-			var serie = repositorio.RetornaPorId(indiceSerie);
-
-			Console.WriteLine(serie);
-		}
-
-        private static void AtualizarSerie()
-		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
-			foreach (int i in Enum.GetValues(typeof(generoG)))
+			Console.Write("O que você deseja escluir?");
+			Console.Write("1 - Anime");
+			Console.Write("2 - Filme");
+			Console.Write("3 - Serie");
+			
+			int selecao = int.Parse(Console.ReadLine());
+			if (selecao == 1)
 			{
-				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(generoG), i));
+				Console.Write("Digite o id do Anime: ");
+				int indice = int.Parse(Console.ReadLine());
+				repositorioF.Exclui(indice);
 			}
-			Console.Write("Digite o gênero entre as opções acima: ");
-			int entradaGenero = int.Parse(Console.ReadLine());
+			else if(selecao == 2)
+			{
+				Console.Write("Digite o id do Filme: ");
+				int indice = int.Parse(Console.ReadLine());
+				repositorioF.Exclui(indice);
+			}
+			else 
+			{
+				Console.Write("Digite o id da série: ");
+				int indice = int.Parse(Console.ReadLine());
+				repositorioS.Exclui(indice);
+			}		
+		}
 
-			Console.Write("Digite o Título da Série: ");
-			string entradaTitulo = Console.ReadLine();
+        private static void VisualizarCatalogo()
+		{
+			Console.Write("Qual Catálogo você deseja visualizar?");
+			Console.Write("1 - Anime");
+			Console.Write("2 - Filme");
+			Console.Write("3 - Serie");
+			int selecao = int.Parse(Console.ReadLine());
+			if (selecao == 1)
+			{
+				Console.Write("Digite o id do Anime: ");
+				int indice = int.Parse(Console.ReadLine());
+				var anime = repositorioA.RetornaPorId(indice);
+				Console.WriteLine(anime);
+			}
+			else if(selecao == 2)
+			{
+				Console.Write("Digite o id do Filme: ");
+				int indice = int.Parse(Console.ReadLine());
+				var filme = repositorioF.RetornaPorId(indice);
+				Console.WriteLine(filme);
+			}
+			else 
+			{
+				Console.Write("Digite o id da série: ");
+				int indice = int.Parse(Console.ReadLine());
+				var serie = repositorioS.RetornaPorId(indice);
+				Console.WriteLine(serie);
+			}			
+		}
 
-			Console.Write("Digite o Ano de Início da Série: ");
-			int entradaAno = int.Parse(Console.ReadLine());
+        private static void AtualizarCatalogo()
+		{
+			
+			Console.Write("Qual Catálogo você deseja visualizar?");
+			Console.Write("1 - Anime");
+			Console.Write("2 - Filme");
+			Console.Write("3 - Serie");
+			int selecao = int.Parse(Console.ReadLine());
+			if (selecao == 1)
+			{
+				
+			}
+			else if(selecao == 2)
+			{
+				
+			}
+			else 
+			{
+				Console.Write("Digite o id da série: ");
+				int indiceSerie = int.Parse(Console.ReadLine());
 
-			Console.Write("Digite a Descrição da Série: ");
-			string entradaDescricao = Console.ReadLine();
+				foreach (int i in Enum.GetValues(typeof(generoG)))
+				{
+					Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(generoG), i));
+				}
+				Console.Write("Digite o gênero entre as opções acima: ");
+				int entradaGenero = int.Parse(Console.ReadLine());
 
-			Serie atualizaSerie = new Serie(id: indiceSerie, genero: (generoG)entradaGenero,	titulo: entradaTitulo, ano: entradaAno,	descricao: entradaDescricao);
+				Console.Write("Digite o Título da Série: ");
+				string entradaTitulo = Console.ReadLine();
 
-			repositorio.Atualiza(indiceSerie, atualizaSerie);
+				Console.Write("Digite o Ano de Início da Série: ");
+				int entradaAno = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite a Descrição da Série: ");
+				string entradaDescricao = Console.ReadLine();
+
+				Console.Write("Digite o número de temporadas: ");
+				int entradaTemporada = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite o número de episódios: ");
+				int entradaNumeroEpisodios = int.Parse(Console.ReadLine());
+
+				Console.Write("A série foi finalizada? ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaFinalizada = int.Parse(Console.ReadLine());
+				bool entradaBF;
+				if(entradaFinalizada == 1){
+					entradaBF = true;
+				}
+				else{
+					entradaBF = false;
+				}
+				
+				Console.Write("A série foi Cancelada? ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaCancelada = int.Parse(Console.ReadLine());
+				bool entradaBC;
+				if(entradaFinalizada == 1){
+					entradaBC = true;
+				}
+				else{
+					entradaBC = false;
+				}
+
+				Console.Write("A série é Spin Off ");
+				Console.Write("1 - Para Sim ");
+				Console.Write("2 - Para Não ");
+				int entradaSpinOff = int.Parse(Console.ReadLine());
+				bool entradaBS;
+				if(entradaSpinOff == 1){
+					entradaBS = true;
+				}
+				else{
+					entradaBS = false;
+				}
+
+				Serie atualizaSerie = new Serie(id: indiceSerie, titulo: entradaTitulo, descricao: entradaDescricao, ano: entradaAno, temporada:entradaTemporada, ndeepisodeos: entradaNumeroEpisodios, finalizado: entradaBF, cancelado: entradaBC, genero: (generoG)entradaGenero, spinoff: entradaBS);
+
+				repositorioS.Atualiza(indiceSerie, atualizaSerie);
+			}
+			
+						
+			
 		}
         private static void ListarSeries()
 		{
@@ -138,7 +241,7 @@ namespace DIO.Series
 			Console.WriteLine("1- Listar Catálogo");
 			Console.WriteLine("2- Inserir ao Catálogo");
 			Console.WriteLine("3- Atualizar Catálogo");
-			Console.WriteLine("4- Excluir um Filme ou Série do Catálogo");
+			Console.WriteLine("4- Excluir do Catálogo");
 			Console.WriteLine("5- Visualizar Catálogo");
 			Console.WriteLine("C- Limpar Tela");
 			Console.WriteLine("X- Sair");
